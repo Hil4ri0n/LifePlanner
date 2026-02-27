@@ -18,7 +18,7 @@ public class ExpenseService {
     private final ExpenseMapper expenseMapper;
 
     public Expense createExpense(Expense expense) {
-       return expenseRepository.save(expense);
+        return expenseRepository.save(expense);
     }
 
     public Expense getExpense(UUID id) {

@@ -30,12 +30,12 @@ public class Expense {
 
     private String name;
 
-    @ManyToOne(fetch = FetchType.EAGER)
+    @ManyToOne(fetch = FetchType.EAGER, optional = false)
     private ExpenseCategory category;
     private BigDecimal amount;
     private Currency currency;
     private LocalDate date;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, optional = false)
     private UserProfile userProfile;
 }
